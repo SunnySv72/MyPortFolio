@@ -6,9 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "test:accessibility" : "pa11y-ci --config .pa11yci.json",
+    "test:accessibility": "pa11y-ci --config .pa11yci.json",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "type-coverage": "type-coverage --strict --detail --ignore-catch"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +25,7 @@
     "pa11y-ci": "^2.3.0",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
+    "type-coverage": "^2.3.0",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
@@ -46,5 +48,8 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.2.2"
+  },
+  "typeCoverage": {
+    "atLeast": 90
   }
 }
